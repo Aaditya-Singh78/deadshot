@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    private _speed = 8.0f;
+    private float _speed = 8.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class Laser : MonoBehaviour
         transform.Translate(Vector3.up * _speed * Time.deltaTime);
         if(transform.position.y > 8f)
         {
-            Destroy(this.GameObject);
+            Destroy(_laserPrefab);
         }
     }
 }
