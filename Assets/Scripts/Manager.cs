@@ -28,4 +28,8 @@ public class Manager : MonoBehaviour
             yield return new WaitForSeconds(5.0f);
         }
     }
+    public void PlayerOnDeath()
+    {
+        _stopSpawning = true;
+    }
 }
